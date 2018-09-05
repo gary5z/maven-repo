@@ -10,7 +10,7 @@ pom.xml
     <repositories>
         <repository>
             <id>gary5z-maven-repo</id>
-            <url>https://raw.githubusercontent.com/gary5z/maven-repo/master/repository</url>
+            <url>https://raw.githubusercontent.com/gary5z/maven-repo/master</url>
         </repository>
     </repositories>
 
