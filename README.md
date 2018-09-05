@@ -76,7 +76,21 @@ git remote add origin https://github.com/gary5z/maven-repo.git
 git push -u origin master
 
 pause
+```
 
+force replace files in repository: git push -f
+
+```bash
+d:\git-maven-repo>git push -f https://github.com/gary5z/maven-repo.git
+Username for 'https://github.com': gary5z
+Password for 'https://gary5z@github.com':
+Counting objects: 16, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (16/16), 1.41 MiB | 12.00 KiB/s, done.
+Total 16 (delta 0), reused 0 (delta 0)
+To https://github.com/gary5z/maven-repo.git
+ + e535ea3...8b47516 master -> master (forced update)
 ```
 
 ## more about maven [deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)
