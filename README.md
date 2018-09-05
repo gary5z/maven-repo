@@ -63,7 +63,7 @@ Uploaded: file://d:/git-maven-repo/com/oracle/ojdbc14/maven-metadata.xml (307 B 
 
 > 3) upload to my github repository
 
-create deploy.bat
+create git-init.bat
 ```bash
 @echo off
 
@@ -78,9 +78,9 @@ git push -u origin master
 pause
 ```
 
-run deploy.bat
+run git-init.bat
 ```bash
-d:\>deploy.bat
+d:\>git-init.bat
 Reinitialized existing Git repository in d:/git-maven-repo/.git/
 [master 7329388] first commit
  1 file changed, 14 insertions(+)
