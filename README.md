@@ -63,7 +63,7 @@ Uploaded: file://d:/git-maven-repo/com/oracle/ojdbc14/maven-metadata.xml (307 B 
 
 > 3) upload to my github repository
 
-create new bat file: deploy.bat
+create deploy.bat
 ```bash
 @echo off
 
@@ -78,8 +78,27 @@ git push -u origin master
 pause
 ```
 
-force replace files in repository: git push -f
+run deploy.bat
+```bash
+d:\>deploy.bat
+Reinitialized existing Git repository in d:/git-maven-repo/.git/
+[master 7329388] first commit
+ 1 file changed, 14 insertions(+)
+fatal: remote origin already exists.
+Username for 'https://github.com': gary5z
+Password for 'https://gary5z@github.com':
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 603 bytes | 603.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/gary5z/maven-repo.git
+   8b47516..7329388  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+```
 
+force push
 ```bash
 d:\git-maven-repo>git push -f https://github.com/gary5z/maven-repo.git
 Username for 'https://github.com': gary5z
