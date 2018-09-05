@@ -116,4 +116,19 @@ To https://github.com/gary5z/maven-repo.git
 - [deploy:deploy](https://maven.apache.org/plugins/maven-deploy-plugin/deploy-mojo.html)  is used to automatically install the artifact, its pom and the attached artifacts produced by a particular project. Most if not all of the information related to the deployment is stored in the project's pom.
 - [deploy:deploy-file](https://maven.apache.org/plugins/maven-deploy-plugin/deploy-file-mojo.html) is used to install a single artifact along with its pom. In that case the artifact information can be taken from an optionally specified pomFile, but can be completed/overriden using the command line.
 
+## more about git
 
+```bash
+步骤：
+1. git init //初始化仓库
+
+2. git add .(文件name) //添加文件到本地仓库
+
+3. git commit -m "first commit" //添加文件描述信息
+
+4. git remote add origin + 远程仓库地址 //链接远程仓库，创建主分支
+
+5. git pull origin master // 把本地仓库的变化连接到远程仓库主分支
+
+6. git push -u origin master //把本地仓库的文件推送到远程仓库
+```
